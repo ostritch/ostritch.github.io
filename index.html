@@ -3,7 +3,7 @@
 	<script src="https://trello.com/power-ups/power-up.min.js"></script>
 	<script>
 		TrelloPowerUp.initialize({
-			'board-buttons': function(t, board) {
+			/*'board-buttons': function(t, board) {
 
 
 				return [
@@ -30,7 +30,7 @@
 					return [];
 				}
 			},
-			'card-detail-badges': function(t, card) {
+			/*'card-detail-badges': function(t, card) {
 				console.log("rendering card detail badge");
 				return [{
 					title: "Card Badge",
@@ -39,7 +39,7 @@
 					
 				}];
 			},
-			'attachment-sections': function(t, options) {
+			/*'attachment-sections': function(t, options) {
 				var attachments = options.entries;
 				console.log(attachments.length + " attachments found.");
 				console.log("This card has attachments ", attachments);
@@ -94,8 +94,8 @@
 					}
 				}];
 				*/
-			},
-			'attachment-thumbnail': function(t, attachment) {
+			//}, 
+			/*'attachment-thumbnail': function(t, attachment) {
 				if(attachment.url == "https://developers.trello.com/") {
 					return {
 						url: "https://developers.trello.com/",
@@ -112,7 +112,7 @@
 				} else {
 					throw t.NotHandled("Not a handled URL");
 				}
-			},
+			},*/
 			'card-buttons': function(t, card) {
 				return [
 				// Button with a nested popup callback
