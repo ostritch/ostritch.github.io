@@ -116,17 +116,19 @@
 			'card-buttons': function(t, card) {
 				var path1 = "http://ep-dev-gal-01/TrelloIMS/Ideas/Edit/" + card.context.card;
 
-
-
 				return [
 				// Button with a nested popup callback
 				{
-					icon: './images/trello-icon-999.svg',
-					text: "Sample Popup",
+					icon: './images/WG_Logo_mono_black.svg',
+					text: "WG IMS",
 					callback: function(t, card) {
 						t.popup({
-							title: 'Options',
+							title: 'Innovation Management System',
 							items: [
+
+                                {text: "Details",url:path1}
+/*
+
 								{
 									text: "Nested Popup",
 									callback: function(t) {
@@ -161,7 +163,7 @@
 									}
 								}
 								// The following example needs you to read the secret before it will work, and has been commented out.
-								/*,
+								,
 								{
 									text: "Authorize with Trello",
 									callback: function(t) {
