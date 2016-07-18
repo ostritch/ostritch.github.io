@@ -116,7 +116,6 @@
 			'card-buttons': function(t, card) {
 				return [
 				// Button with a nested popup callback
-				var path = "http://ep-dev-gal-01/TrelloIMS/Ideas/Edit/" + card.context.card;
 				{
 					icon: './images/trello-icon-999.svg',
 					text: "Sample Popup",
@@ -131,8 +130,8 @@
 										t.popup({
 											title: "Nested Options",
 											items: [
-												{text: "Link4",url:"https://developers.trello.com/"}
-												]
+												{text: "Link",url:"https://developers.trello.com/"},
+												{text: "Link",url:"https://developers.trello.com/"}]
 
 										});
 									}

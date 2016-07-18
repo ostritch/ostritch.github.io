@@ -1,7 +1,7 @@
 {
-  "name": "Wood Group IMS",
+  "name": "Sample",
   "description": "This is a Sample Power-Up demonstrating various capabilities",
-  "details":"Details about the power-up.",
+  "details":"Details about the power-up barry.",
   "icon": {
     "url": "./images/trello-icon.png"
   },
