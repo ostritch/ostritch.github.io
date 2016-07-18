@@ -117,29 +117,55 @@
 				return [
 				// Button with a nested popup callback
 				{
-					//icon: './images/trello-icon-999.svg',
-					icon: './images/WG_Logo_mono_black.svg',
-					text: "WG IMS",
+					icon: './images/trello-icon-999.svg',
+					text: "Sample Popup",
 					callback: function(t, card) {
 						t.popup({
-							title: 'WG Innovation Management',
+							title: 'Options',
 							items: [
+								{
+									text: "Nested Popup",
+									callback: function(t) {
+										console.log("Option 1 chosen");
+										t.popup({
+											title: "Nested Options",
+											items: [
+												{text: "Link",url:"https://developers.trello.com/"},
+												{text: "Link",url:"https://developers.trello.com/"}]
 
-							        {text: "Link74",url:"http://www.woodgroup.com/Pages/default.aspx"}
-							        //{text: "Link5",url:"http://www.woodgroup.com/news-events/news-releases/Pages/2185225.aspx"},
-							        
-							        //{text: "Details",url:"http://ep-dev-gal-01/TrelloIMS/Ideas/Edit/" + card.context.card}
-							        //{text: "Link3",url:"http://ep-dev-gal-01/TrelloIMS/Ideas"},
-                                
-                                
-						        
-					
-				        
-						        	
-								
-								
-								
-								
+										});
+									}
+								},
+								{
+									text: "Board Bar",
+									callback: function(t) {
+										t.boardBar({
+											url: "bar-contents.html",
+											height:550
+										});
+										t.closePopup();
+									}
+								},
+								{
+									text: 'Popup Iframe',
+									callback: function(t) {
+										t.popup({
+											title: 'Popup Iframe',
+											//url: t.signUrl('./attachment-section.html')
+											url: './attachment-section.html'
+										});
+									}
+								}
+								// The following example needs you to read the secret before it will work, and has been commented out.
+								/*,
+								{
+									text: "Authorize with Trello",
+									callback: function(t) {
+										t.popup({
+											title: "Auth needed",
+											url: 'auth-popup.html'});	
+										}
+								}*/
 							]
 						});
 					}
