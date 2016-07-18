@@ -7,15 +7,15 @@
   },
   "author": "Trello Inc",
   "capabilities": [
-    //"board-buttons",
-    //"card-badges",
-    //"card-detail-badges",
-    "card-buttons"
-    //"attachment-thumbnail",
-    //"attachment-sections",
-    //"format-url",
-    //"show-settings",
-    //"callback"
+    "board-buttons",
+    "card-badges",
+    "card-detail-badges",
+    "card-buttons",
+    "attachment-thumbnail",
+    "attachment-sections",
+    "format-url",
+    "show-settings",
+    "callback"
   ],
   "connectors": {
     "iframe": {
