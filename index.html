@@ -117,26 +117,27 @@
 				return [
 				// Button with a nested popup callback
 				{
-					icon: './images/trello-icon-999.svg',
-					text: "Sample Popup",
+					//icon: './images/trello-icon-999.svg',
+					icon: './images/WG_Logo_mono_black.svg',
+					text: "WG IMS",
 					callback: function(t, card) {
 						t.popup({
 							title: 'Options',
 							items: [
 								{
-									text: "Nested Popup",
+									text: "Details",
 									callback: function(t) {
 										console.log("Option 1 chosen");
 										t.popup({
-											title: "Nested Options",
+											title: "WG Innovation Management",
 											items: [
-												{text: "Link",url:"https://developers.trello.com/"},
+												//{text: "Link",url:"https://developers.trello.com/"},
 												{text: "Link",url:"https://developers.trello.com/"}]
 
 										});
 									}
 								},
-								{
+								/*{
 									text: "Board Bar",
 									callback: function(t) {
 										t.boardBar({
@@ -156,6 +157,7 @@
 										});
 									}
 								}
+								*/
 								// The following example needs you to read the secret before it will work, and has been commented out.
 								/*,
 								{
