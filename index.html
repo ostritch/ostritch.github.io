@@ -123,45 +123,22 @@
 					callback: function(t, card) {
 						t.popup({
 							title: 'WG Innovation Management',
-							items: [{text: "Link4",url:"http://www.woodgroup.com/Pages/default.aspx"},
+							items: [
+							
+							        {text: "Link4",url:"http://www.woodgroup.com/Pages/default.aspx"},
 							        {text: "Link5",url:"http://www.woodgroup.com/news-events/news-releases/Pages/2185225.aspx"},
 							        {text: "Link3",url:"//ep-dev-gal-01/TrelloIMS/Ideas"},
-							        {text: "Link2",url:"//ep-dev-gal-01/TrelloIMS/Ideas/Edit/" + card.id}]
+							        {text: "Link2",url:"//ep-dev-gal-01/TrelloIMS/Ideas/Edit/" + card.id}
                                 
                                 
-						        });	
-						        /*	
-								{
-									text: "Board Bar",
-									callback: function(t) {
-										t.boardBar({
-											url: "bar-contents.html",
-											height:550
-										});
-										t.closePopup();
-									}
-								},
-								{
-									text: 'Popup Iframe',
-									callback: function(t) {
-										t.popup({
-											title: 'Popup Iframe',
-											//url: t.signUrl('./attachment-section.html')
-											url: './attachment-section.html'
-										});
-									}
-								}
+						        
+					
+				        
+						        	
 								
-								// The following example needs you to read the secret before it will work, and has been commented out.
-								/*,
-								{
-									text: "Authorize with Trello",
-									callback: function(t) {
-										t.popup({
-											title: "Auth needed",
-											url: 'auth-popup.html'});	
-										}
-								}*/
+								
+								
+								
 							]
 						});
 					}
